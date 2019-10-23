@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="spring.co.DAO.BankDAO">
+  	
+  	<select id="baSeAl"  resultType="BankVO">
+  		select * from bank
+  	</select>
+  	
+  	<select id="baSeOn" resultType="BankVO">
+  		select * from bank
+  		where unum = #{unum}
+  	</select>
+  	
+  	<insert id="baInOn">
+  		insert into bank(account,unum)
+  		values(#{account},#{unum})
+  	</insert>
+  	
+  	<update id="baUpOn" >
+  		update bank set balance = #{balance} 
+  		where unum = #{unum}
+  	</update>
+  	
+  	<delete id="baDeOn" >
+  		delete from tbl_board
+  		where unum = #{unum}
+  	</delete>
+  
+  </mapper>
