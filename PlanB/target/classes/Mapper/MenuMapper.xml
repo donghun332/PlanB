@@ -5,18 +5,18 @@
   
   <mapper namespace="spring.co.DAO.MenuDAO">
   
-    	<select id="selectOne"  resultType="BbsVO">
+    <select id="meSeAl"  resultType="BbsVO">
   		select * from tbl_board where bid = #{bid}
   	</select>
-  	<insert id="insertOne">
+  	<insert id="meInOn">
   		insert into tbl_board(subject,contents,writer)
   		values(#{subject},#{contents},#{writer})
   	</insert>
-  	<update id="updateOne" >
+  	<update id="meUpOn" >
   		update tbl_board set subject = #{subject} , contents = #{contents}
   		where bid = #{bid}
   	</update>
-  	<delete id="deleteOne" >
+  	<delete id="meDeOn" >
   		delete from tbl_board
   		where bid = #{bid}
   	</delete>

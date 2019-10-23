@@ -5,13 +5,14 @@
   
   <mapper namespace="spring.co.DAO.BillDAO">
   
-    <select id="biSeAl"  resultType="BbsVO">
+    <select id="biSeAl"  resultType="BbsVO"> <!-- 개인 출금 내역 조회 -->
   		select * from bill
   		where account = #{account}
   	</select>
-  	<insert id="biInOn">
-  		insert into tbl_board(subject,contents,writer)
-  		values(#{subject},#{contents},#{writer})
+  	
+  	<insert id="biInOn"> <!-- 입출금시 내역 저장 -->
+  		insert into bill
+  		values(#{account},#{deposit},#{from}, #{remittance}, #{to})
   	</insert>
   	
   
