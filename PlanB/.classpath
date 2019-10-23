@@ -36,5 +36,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="C:/framework_lib/mybatis-3.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/framework_lib/mysql-connector-java-5.1.47.jar"/>
+	<classpathentry kind="lib" path="C:/framework_lib/spring-test-5.1.8.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/framework_lib/ojdbc6.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

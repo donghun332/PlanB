@@ -18,7 +18,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>5.0.14.RELEASE</version>
+			<version>${org.springframework-version}</version>
 			<exclusions>
 				<!-- Exclude Commons Logging in favor of SLF4j -->
 				<exclusion>
@@ -30,7 +30,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>5.0.14.RELEASE</version>
+			<version>${org.springframework-version}</version>
 		</dependency>
 				
 		<!-- AspectJ -->
@@ -125,6 +125,12 @@
         <groupId>org.mybatis</groupId>
         <artifactId>mybatis-spring</artifactId>
         <version>2.0.2</version>
+   </dependency>
+   
+   <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>5.0.14.RELEASE</version>
    </dependency>
 	
 		<!-- Test -->
